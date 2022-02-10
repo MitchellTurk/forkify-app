@@ -128,8 +128,8 @@ const controlAddRecipe = async function (newRecipe) {
 };
 
 const init = function () {
-  bookmarksView.addHandlerRender(controlBookmarks);
-  recipeView.addHandlerRender(controlRecipes); // Publisher-Subscriber pattern
+  bookmarksView.addHandlerRender(controlBookmarks); // Publisher-Subscriber pattern
+  recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(controlSearchResults);
